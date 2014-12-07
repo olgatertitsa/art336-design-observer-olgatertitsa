@@ -60,6 +60,12 @@ $padding: 6px;
     }
 }
 
+.row .col-4-5 {
+    @media screen and (min-width: $tablet) {
+        width: calc(37.5% - #{$gutter});
+    }
+}
+
 .row .col-5 { 
     @media screen and (min-width: $tablet) {
         width: calc(41.6666666% - #{$gutter});
@@ -138,6 +144,12 @@ $padding: 6px;
 .row-no-gutter .col-4 {
     @media screen and (min-width: $tablet) {
         width: 33.3333333%;
+    }
+}
+
+.row-no-gutter .col-4-5 {
+    @media screen and (min-width: $tablet) {
+        width: 37.5%;
     }
 }
 
@@ -228,6 +240,10 @@ $padding: 6px;
     margin-bottom: $gutter;
 }
 
+.outer-no-gutter {
+    width: 100%;
+}
+
 .outer .row:last-of-type [class^="col-"],
 .outer .row-no-gutter:last-of-type [class^="col-"],
 .fixed .row:last-of-type [class^="col-"], 
@@ -241,6 +257,10 @@ $padding: 6px;
 
 .text-right {
     text-align: right;
+}
+
+.text-center {
+    text-align: center;
 }
 
 .vcenter {

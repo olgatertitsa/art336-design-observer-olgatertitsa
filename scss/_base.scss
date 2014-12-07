@@ -2,3 +2,105 @@
 Base Rules
 	A Base rule is applied to an element using an element selector, a descendent selector, or a child selector, along with any pseudoclasses. It doesn’t include any class or ID selectors. It is defining the default styling for how that element should look in all occurrences on the page.
 */
+
+a {
+    color: #00a7ff;
+    font-weight:600;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: .8em;
+    opacity: 1.0;
+    transition: opacity .3s ease-in-out;
+    -moz-transition: opacity .3s ease-in-out;
+    -webkit-transition: opacity .3s ease-in-out;
+}
+
+main a:hover:not(.viewmore){
+    //border-bottom: 1.5px dotted #CCC;
+    opacity: .5;
+    transition: opacity .3s ease-in-out;
+    -moz-transition: opacity .3s ease-in-out;
+    -webkit-transition: opacity .3s ease-in-out;
+}
+
+
+img {
+    max-width: 100%;
+}
+
+.featured-article img {
+    max-width: 98%;
+}
+
+header {
+    background-color: #FFF;
+    padding-bottom: 10px;
+}
+
+body {
+    color: #000;
+    font-size: 1.1em;
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    line-height: 1.6;
+    letter-spacing: .05em;
+}
+
+h1 {
+    color: #000;
+    font-size: 3.8em;
+    font-family: 'Playfair Display', georgia, serif;
+    font-weight: 700;
+    font-style: italic;
+    margin-bottom: 10px;
+    margin-top: 15px;
+    text-align: center;
+    line-height: 1.2em;
+    @media screen and (max-width: $tablet) {
+        font-size: 2em;   
+    }
+}
+
+h2 {
+    color: #000;
+    font-size: 3.2em;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    line-height: 1.1em;
+    margin-bottom: -30px;
+    margin-top: -13px;
+}
+
+h3 {
+    color: #000;
+    font-size: 1.6em;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    line-height: 1.6;
+    margin-bottom: -20px;
+    margin-top: 0px;
+}
+
+h4 {
+    margin-bottom: 10px;
+}
+
+h5{
+    margin-bottom: -10px;
+    font-family: 'Playfair Display', georgia, serif;
+    text-transform: lowercase;
+    font-size: 1em;
+}
+
+nav {
+    font-size: 18px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 600;
+    line-height: 1.6;
+    letter-spacing: .25em;
+    text-transform: uppercase;
+}
+
+
+
+
