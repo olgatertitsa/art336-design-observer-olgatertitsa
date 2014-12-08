@@ -72,6 +72,7 @@ Module Rules
 
 .footer-wrap p{
     margin-bottom: 2px;
+    line-height: 1em;
 }
 
 .social-media {
@@ -99,6 +100,16 @@ Module Rules
     margin-left: 10px;
     border-left: 1px solid rgba(gray, .2);
     height: 61%;
+}
+
+.sidebar-mobile {
+    font-size: .85em;
+    line-height: .5em;
+//    padding-left: 20px;
+//    margin-left: 10px;
+    border-top: 1px solid rgba(gray, .2);
+    height: 61%;
+    text-align: center;
 }
 
 input[type="search"], input[type="email"]{
@@ -133,6 +144,27 @@ input[type="email"].focus,{
     //width: 100%;
 }
 
+.sidebar-mobile .job-op {
+    width: 40%;
+    margin: auto;
+}
+
 main {
     padding: 0 10px 0 10px;
 }
+
+
+.article-header{
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+
+.author-description {
+    background-color: #9d9a9a;
+    color: #FFF;
+    padding: 1px 18px 1px 15px;
+    border-radius: 4px;
+    font-size: .7em;
+    text-align: justify;
+}
+
